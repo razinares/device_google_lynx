@@ -1,2 +1,3 @@
-kernel vendor_charger_debugfs dir b/305600791
 hal_bluetooth_default vendor_data_file dir b/318453067
+hal_bluetooth_default vendor_default_prop property_service b/357483837
+kernel vendor_charger_debugfs dir b/305600791

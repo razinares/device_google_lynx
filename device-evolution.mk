@@ -5,7 +5,13 @@
 #
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-evolution
+
+# Udfps
+TARGET_HAS_UDFPS += true
+
+# Use libc variant by default
+PRODUCT_USE_SCUDO := true
 
 # ANGLE - Almost Native Graphics Layer Engine
 PRODUCT_PACKAGES += \

@@ -5,7 +5,7 @@
 #
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-voltage
 
 # ANGLE - Almost Native Graphics Layer Engine
 PRODUCT_PACKAGES += \
@@ -24,7 +24,7 @@ PRODUCT_PACKAGES += \
 
 # Kernel
 TARGET_PREBUILT_KERNEL := device/google/lynx-kernel/Image.lz4
-
+#TARGET_KERNEL_SOURCE :=
 # wireless_charger HAL service
 include device/google/gs-common/wireless_charger/wireless_charger.mk
 

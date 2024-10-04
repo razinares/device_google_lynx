@@ -17,6 +17,10 @@ $(call inherit-product, device/google/lynx/device-lineage.mk)
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 7a
 PRODUCT_NAME := voltage_lynx
+PRODUCT_GMS_CLIENTID_BASE := android-google
+
+# UDFPS animations
+EXTRA_UDFPS_ANIMATIONS := true
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400

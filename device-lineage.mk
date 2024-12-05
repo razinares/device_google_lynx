@@ -5,6 +5,7 @@
 #
 
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay-lineage
+TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 
 # ANGLE - Almost Native Graphics Layer Engine
 PRODUCT_PACKAGES += \

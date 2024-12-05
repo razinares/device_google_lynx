@@ -6,7 +6,15 @@
 
 # Inherit some common stuff
 TARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+
+# Infinity Flags
+WITH_GMS := true
+WITH_GAPPS := true
+INFINITY_MAINTAINER := RAZIN
+TARGET_BUILD_GOOGLE_TELEPHONY := true
+TARGET_SHIPS_FULL_GAPPS := true
+PRODUCT_NO_CAMERA := true
 
 # Inherit device configuration
 DEVICE_CODENAME := lynx
@@ -19,7 +27,7 @@ $(call inherit-product, $(DEVICE_PATH)/$(DEVICE_CODENAME)/device-lineage.mk)
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 7a
-PRODUCT_NAME := lineage_$(DEVICE_CODENAME)
+PRODUCT_NAME := infinity_$(DEVICE_CODENAME)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
